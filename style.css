@@ -1,0 +1,98 @@
+.watch-tips {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  z-index: 11;
+}
+.hours{
+  width: 190px;
+  height: 6px;
+  position: absolute;
+  top: calc(50% - 3px);
+  left: calc(50% - 30px);
+  transform: rotate(153deg);
+  background-color: #fff;
+  transform-origin: 30px center;
+  box-shadow: 0 4px 12px 2px rgba(0,0,0,0.15);
+  border-radius: 0 20px 20px 0;
+  z-index: 12;
+}
+.hours::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 23px;
+    top: -5px;
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.seconds{
+  width: 197px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 30px);
+  transform: rotate(0deg);
+  animation: 30s seconds linear infinite;
+  background-color: #FE0806;
+  transform-origin: 30px center;
+  box-shadow: 0 0 16px 2px rgba(#FE0806,0.2);
+  border-radius: 0 20px 20px 0;
+  z-index: 15;
+}
+.seconds::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: -4px;
+    height: 10px;
+    width: 10px;
+    background-color: #FE0806;
+    border-radius: 50%;
+    z-index: 15;
+}
+.minutes{
+  width: 170px;
+  height: 6px;
+  position: absolute;
+  top: calc(50% - 3px);
+  left: calc(50% - 30px);
+  transform: rotate(15deg);
+  background-color: #000004;
+  transform-origin: 30px center;
+  border-radius: 0 20px 20px 0;
+  z-index: 11;
+}
+@keyframes seconds{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+video{
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 3.8%;
+  margin-left: 33%;
+}
+.div-white{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 59.3%;
+  transform: rotate(355deg);
+}
